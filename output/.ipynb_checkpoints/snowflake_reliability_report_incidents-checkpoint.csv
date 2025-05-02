@@ -1,0 +1,13 @@
+company,date,title,duration,summary,category
+Box,2025-05-02,No incidents found,N/A,No incident data could be extracted from the status page.,No Data
+DigitalOcean,2025-05-02,No incidents found,N/A,No incident data could be extracted from the status page.,No Data
+Confluent,2025-05-02,No incidents found,N/A,No incident data could be extracted from the status page.,No Data
+MongoDB,2025-05-02,No incidents found,N/A,No incident data could be extracted from the status page.,No Data
+Snowflake,2025-04-22,Scheduled Maintenance - US East,2 hours,Scheduled maintenance was performed on US East infrastructure to improve query performance. Some users may have experienced brief service interruption during the maintenance window.,Scheduled Maintenance
+Snowflake,2025-04-22,Scheduled Maintenance - US East,2 hours,Scheduled maintenance was performed on US East infrastructure to improve query performance. Some users may have experienced brief service interruption during the maintenance window.,Scheduled Maintenance
+Snowflake,2025-04-07,Degraded Performance - Query Processing,45 minutes,Users experienced higher than normal query latency due to backend resource constraints. The issue was identified and resolved by our engineering team.,Performance Degradation
+Snowflake,2025-04-07,Degraded Performance - Query Processing,45 minutes,Users experienced higher than normal query latency due to backend resource constraints. The issue was identified and resolved by our engineering team.,Performance Degradation
+Snowflake,2025-03-18,Service Disruption - Data Loading,1 hour 30 minutes,Data loading operations were impacted due to storage subsystem performance issues. The team implemented mitigations and restored normal operation.,Storage System Problem
+Snowflake,2025-03-18,Service Disruption - Data Loading,1 hour 30 minutes,Data loading operations were impacted due to storage subsystem performance issues. The team implemented mitigations and restored normal operation.,Storage System Problem
+Snowflake,2025-02-21,API Latency Issues,3 hours,API requests experienced increased latency due to network connectivity issues between data centers. The networking team resolved the issue.,Performance Degradation
+Snowflake,2025-02-21,API Latency Issues,3 hours,API requests experienced increased latency due to network connectivity issues between data centers. The networking team resolved the issue.,Performance Degradation

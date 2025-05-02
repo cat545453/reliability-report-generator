@@ -1,0 +1,7 @@
+{
+  "MongoDB": "https://status.mongodb.com/history",
+  "Snowflake": "https://status.snowflake.com/history",
+  "Confluent": "https://status.confluent.cloud/history",
+  "DigitalOcean": "https://status.digitalocean.com/history",
+  "Box": "https://status.box.com/history"
+}
