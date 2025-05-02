@@ -12,4 +12,22 @@ This repo is designed to automate the generation of reliability reports by aggre
 
 6. **`peer_companies.json`**: This JSON file contains a list of peer companies, likely used for benchmarking purposes. By comparing incident metrics across similar organizations, the tool can contextualize reliability performance within the industry landscape.
 
-Collectively, showcases a modular architecture that integrates data extraction, statistical analysis, and report generation. Its able to combine web-scraped data with enterprise data warehouse information, followed by automated analysis and reporting, exemplifies a robust approach to monitoring and improving system reliability.
+## 🚀 Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/reliability-report-generator.git
+cd reliability-report-generator
+
+# Set up a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Set your OpenAI API key
+export OPENAI_API_KEY=your-api-key-here  # On Windows: set OPENAI_API_KEY=your-api-key-here```
+
+
+
