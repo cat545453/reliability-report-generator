@@ -28,8 +28,9 @@ pip install -r requirements.txt
 
 # Set your OpenAI API key
 export OPENAI_API_KEY=your-api-key-here  # On Windows: set OPENAI_API_KEY=your-api-key-here
-🧠 Usage
-Command Line Interface
+
+##🧠 Usage
+
 python cli.py --company "New Relic" --url "https://status.newrelic.com/history" --peers peer_companies.json --timeframe 90
 
 Arguments
@@ -49,6 +50,7 @@ Arguments
   "DigitalOcean": "https://status.digitalocean.com/history",
   "Box": "https://status.box.com/history"
 }
+
 ```
 
 
