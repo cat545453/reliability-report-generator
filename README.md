@@ -1,4 +1,4 @@
-This repo is designed to automate the generation of reliability reports by aggregating and analyzing incident data from various sources. Here's a concise breakdown of its core components and the techniques employed:
+This repo is designed to automate the generation of reliability reports by aggregating and analyzing incident data from various sources. Here's a concise breakdown of its core components and the techniques:
 
 1. **`status_page_scraper_update.py`**: This script employs web scraping techniques to extract incident data from public status pages. By parsing HTML content, it retrieves relevant information such as incident dates, durations, and descriptions, serving as the foundational data source for the analysis pipeline.
 
