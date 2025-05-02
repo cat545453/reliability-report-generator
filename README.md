@@ -27,7 +27,40 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 # Set your OpenAI API key
-export OPENAI_API_KEY=your-api-key-here  # On Windows: set OPENAI_API_KEY=your-api-key-here```
+export OPENAI_API_KEY=your-api-key-here  # On Windows: set OPENAI_API_KEY=your-api-key-here
+🧠 Usage
+Command Line Interface
+bash
+Copy
+Edit
+python cli.py --company "New Relic" --url "https://status.newrelic.com/history" --peers peer_companies.json --timeframe 90
+Arguments
+--company, -c: Name of the target company (e.g., "New Relic")
+
+--url, -u: URL of the company's status history page
+
+--peers, -p: Path to JSON file with peer companies and their status URLs
+
+--timeframe, -t: Number of days to analyze (default: 90)
+
+--output-dir, -o: Directory to save generated reports (default: ./output)
+
+--openai-key, -k: OpenAI API key (optional if OPENAI_API_KEY env var is set)
+
+--debug: Enable debug logging output
+
+📄 Sample Peer Companies JSON
+json
+Copy
+Edit
+{
+  "MongoDB": "https://status.mongodb.com/history",
+  "Snowflake": "https://status.snowflake.com/history",
+  "Confluent": "https://status.confluent.cloud/history",
+  "DigitalOcean": "https://status.digitalocean.com/history",
+  "Box": "https://status.box.com/history"
+}
+```
 
 
 
