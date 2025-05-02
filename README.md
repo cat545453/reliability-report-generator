@@ -12,7 +12,7 @@ This repo is designed to automate the generation of reliability reports by aggre
 
 6. **`peer_companies.json`**: This JSON file contains a list of peer companies, likely used for benchmarking purposes. By comparing incident metrics across similar organizations, the tool can contextualize reliability performance within the industry landscape.
 
-## 🚀 Setup
+## Setup
 
 ```bash
 # Clone the repository
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 # Set your OpenAI API key
 export OPENAI_API_KEY=your-api-key-here  # On Windows: set OPENAI_API_KEY=your-api-key-here
 
-##🧠 Usage
+## Usage
 
 python cli.py --company "New Relic" --url "https://status.newrelic.com/history" --peers peer_companies.json --timeframe 90
 
