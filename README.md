@@ -1,49 +1,17 @@
-**AI Reliability Report Generator**
-This project creates automated reliability reports for enterprise SaaS companies by analyzing their status pages and comparing incident patterns against peer companies.
-Overview
-The AI Reliability Report Generator extracts incident data from status pages, categorizes incidents using AI, identifies trends, and generates comprehensive reports with visualizations. It enables companies to benchmark their reliability against competitors and identify areas for improvement.
+[![GitHub - SubeyteT/Reliability-Analysis: Cronbach Alpha and Reliability ...](https://tse2.mm.bing.net/th/id/OIP.yf6WvykeKjsHL4xqglTNwgAAAA?pid=Api)](https://github.com/SubeyteT/Reliability-Analysis)
 
-Features
+The GitHub repository [cat545453/reliability-report-generator](https://github.com/cat545453/reliability-report-generator) is a Python-based tool designed to automate the generation of reliability reports by aggregating and analyzing incident data from various sources. Here's a concise breakdown of its core components and the techniques employed:
 
-Status Page Scraping: Extracts incident data from company status pages
-AI-Powered Categorization: Uses OpenAI to intelligently categorize incidents
-Peer Comparison: Compares reliability metrics against peer companies
-Trend Analysis: Identifies patterns and trends in incident occurrence
-Comprehensive Reporting: Generates detailed reports with visualizations
-Flexible Configuration: Supports multiple status page formats
+1. **`status_page_scraper_update.py`**: This script employs web scraping techniques to extract incident data from public status pages. By parsing HTML content, it retrieves relevant information such as incident dates, durations, and descriptions, serving as the foundational data source for the analysis pipeline.
 
-Installation
-Clone the repository
-git clone https://github.com/yourusername/reliability-report-generator.git
-cd reliability-report-generator
+2. **`snowflake_scraper.py`**: Utilizing Snowflake's Python connector, this module connects to a Snowflake data warehouse to fetch structured incident logs. It executes SQL queries to retrieve data, ensuring seamless integration with enterprise-level data storage solutions.
 
-# Set up a virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+3. **`incident_analyzer.py`**: This component processes the collected incident data, calculating metrics like Mean Time Between Failures (MTBF) and Mean Time To Recovery (MTTR). It leverages statistical analysis to identify patterns and trends, providing insights into system reliability over time.
 
-# Install dependencies
-pip install -r requirements.txt
+4. **`report_generator.py`**: Responsible for compiling the analyzed data into comprehensive reports, this script formats the findings into readable documents, potentially in formats like PDF or HTML. It ensures that the insights are presented in a clear and accessible manner for stakeholders.
 
-# Set your OpenAI API key
-export OPENAI_API_KEY=your-api-key-here  # On Windows: set OPENAI_API_KEY=your-api-key-here
-Usage
-Command Line Interface
-bashpython cli.py --company "New Relic" --url "https://status.newrelic.com/history" --peers peer_companies.json --timeframe 90
-Arguments
+5. **`improved_main.py`**: Serving as the orchestrator, this main script coordinates the execution of the scraping, analysis, and reporting modules. It defines the workflow sequence, handles exceptions, and ensures that each component interacts seamlessly within the pipeline.
 
---company, -c: Name of the target company
---url, -u: URL of the target company's status page
---peers, -p: Path to JSON file with peer companies and their status page URLs
---timeframe, -t: Number of days to analyze (default: 90)
---output-dir, -o: Directory to save reports (default: ./output)
---openai-key, -k: OpenAI API key (otherwise uses OPENAI_API_KEY environment variable)
---debug: Enable debug logging
+6. **`peer_companies.json`**: This JSON file contains a list of peer companies, likely used for benchmarking purposes. By comparing incident metrics across similar organizations, the tool can contextualize reliability performance within the industry landscape.
 
-**Sample Peer Companies JSON**
-json{
-  "MongoDB": "https://status.mongodb.com/history",
-  "Snowflake": "https://status.snowflake.com/history",
-  "Confluent": "https://status.confluent.cloud/history",
-  "DigitalOcean": "https://status.digitalocean.com/history",
-  "Box": "https://status.box.com/history"
-}
+Collectively, the repository showcases a modular architecture that integrates data extraction, statistical analysis, and report generation. Its ability to combine web-scraped data with enterprise data warehouse information, followed by automated analysis and reporting, exemplifies a robust approach to monitoring and improving system reliability.
