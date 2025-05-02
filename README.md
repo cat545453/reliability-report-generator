@@ -35,7 +35,7 @@ python cli.py --company "New Relic" --url "https://status.newrelic.com/history" 
 
 Arguments
 --company, -c: Name of the target company (e.g., "New Relic")
---url, -u: URL of the company's status history page
+--url, -u: URL of the company status history page
 --peers, -p: Path to JSON file with peer companies and their status URLs
 --timeframe, -t: Number of days to analyze (default: 90)
 --output-dir, -o: Directory to save generated reports (default: ./output)
